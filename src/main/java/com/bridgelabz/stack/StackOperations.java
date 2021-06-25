@@ -52,7 +52,6 @@ class StackOperations {
 
 				// print node data
 				System.out.printf("%d->", temp.data);
-
 				// assign temp next to temp
 				temp = temp.next;
 			}
