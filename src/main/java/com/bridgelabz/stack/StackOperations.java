@@ -39,7 +39,30 @@ class StackOperations {
 		return top == null;
 	}
 
-	// Utility function to return top element in a stack
+	 public int peek()
+	    {
+	        // check for empty stack
+	        if (!isEmpty()) {
+	            return top.data;
+	        }
+	        else {
+	            System.out.println("Stack is empty");
+	            return -1;
+	        }
+	    }
+	 
+	    // Utility function to pop top element from the stack
+	    public void pop() // remove at the beginning
+	    {
+	        // check for stack underflo
+	        if (top == null) {
+	            System.out.print("\nStack Underflow");
+	            return;
+	        }
+	 
+	        // update the top pointer to point to the next node
+	        top = (top).next;
+	    }
 
 	public void display() {
 		// check for stack underflow
